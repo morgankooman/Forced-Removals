@@ -1,0 +1,295 @@
+html {
+    margin: 0;
+    padding: 0;
+    background-color:  white;
+}
+#h1 {
+    font-weight: bold;
+    font-size: 2rem;
+    margin-right:20px;
+    font-family: "questrial";
+}
+h2 {
+    text-align: center;
+    font-family: "questrial";
+    font-weight: bold;
+    font-size: 2rem;
+    
+}
+nav {
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    background-color: #186480;
+}
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav li {
+    list-style: none; 
+}
+.link:hover {
+    cursor: pointer;
+    color: orange;
+    font-size: 1.1rem;
+}
+.link:active {
+    color: orangered;
+    font-size: 1.3rem;
+}
+
+@media screen and (max-width: 700px) {
+    .nav-links .link {
+        display: none;
+    }
+}
+
+.banner {
+    width:100%;
+    margin-top: 70px;
+    margin-bottom: 50px;
+    background-image: url("..//images/van.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding-top: 300px;
+    padding-bottom: 300px;
+}
+.banner p {
+    text-align: center;
+    background-color: #30C8FF;
+    padding: 10px 0;
+    font-weight: bold;
+    font-size: 2rem;
+}
+.banner-text {
+    width: 100%;
+}
+#about {
+    height: 100px;
+}
+.about-us {
+    text-align: center;
+    width:60%;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 1.4rem;
+}
+#services {
+    height: 100px
+}
+.services-all {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-around;
+    height: fit-content;
+}
+.resize {
+    height: 100%;
+    width: 100%;
+}
+
+.services figure {
+    height: 200px;
+    width: 300px;
+    margin: 60px;    
+}
+.services img {
+    border-radius: 7%;
+}
+@media screen and (max-width: 900px) {
+    .banner p, .h1 {
+        font-size: 1.5rem;
+    }
+}
+
+#our-team {
+    height:50px;
+}
+
+.our-team {
+    width:100%;
+    margin-top: 70px;
+    margin-bottom: 50px;
+    background-image: url("..//images/alley.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-bottom: 30px;    
+}
+.our-team h2 {
+    text-align: center;
+    color: #30C8FF;
+}
+figcaption {
+    font-size: 1.4rem;
+    font-weight: bolder;
+}
+
+.our-team figure {
+    height: 200px;
+    width: 300px;
+    margin: 30px;    
+}
+.our-team img {
+    border: 2px solid #30C8FF;
+    border-radius: 7%;
+}
+.our-team figcaption {
+    text-align: center;
+    color: #30C8FF;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.dr {
+    width: 60%;
+    margin: 0 auto;
+    
+}
+.dr figure {
+    float:left;
+    margin-right: 10px;
+    clear: both;
+
+}
+.dr .blurb {
+    margin-left: 0;
+    overflow: auto;
+    display: inline;
+    margin-top: 30px;
+    font-size: 1.4rem;
+
+}
+.blurb-background {
+    background-color:#30C8FF;
+    padding:5px;
+    border-radius: 2px;
+    width: 100%;
+    overflow: hidden;
+    display: inline;
+}
+
+
+.crew {
+    margin-top: 30px;
+    display: flex;
+    clear: left;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1000px) {
+    .our-team {height: fit-content;
+    }
+    .dr {
+        width: 90%;
+        display: flex;
+        flex-flow: column;
+    }
+}
+
+
+.testimonials {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    justify-content: center;
+    margin: 70px 0;
+}
+.testimonials p {
+    overflow: wrap;
+    align-content: center;
+    width: 50%;
+    margin-left: 2rem;
+}
+.testimonials-box {
+    width: 40%;
+    display: flex;
+}
+
+.kimmy {
+    background-image: url("../images/kimmy.png");
+    background-size: cover;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 30px;
+}
+
+.joe {
+    background-image: url("../images/joe.png");
+    background-size: cover;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+}
+@media screen and (max-width: 900px) {
+    .testimonials {
+        flex-flow: column;
+    }
+    .testimonials-box {
+        width: 80%;
+        padding-left: 10%;
+    }
+}
+
+footer {
+    width: 100%;
+    height: 275px;
+    padding: 30px 0;
+    background-color: #186480;
+    
+}
+.contact {
+    display: grid;
+    height: 250px;
+    width: 1400px;
+    grid-template: repeat(4, 50px) / repeat(8, 1fr);
+}
+
+.digital-contact {
+    grid-area: 1 / 1 / 5 / 5;
+    margin-left: 100px;
+    font-weight: bold; 
+    text-align: center;
+}
+
+.visit {
+    grid-area: 1 / 5 / 5 / 9;
+}
+.visit img {
+    width: 70%;
+}
+@media screen and (max-width: 900px) {
+    .digital-contact {
+        text-align: left;
+    }
+    .digital-contact h2 {
+        text-align: left;
+    }
+    .visit {
+        display: none;
+    }
+}
